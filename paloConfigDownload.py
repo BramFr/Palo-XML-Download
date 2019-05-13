@@ -72,7 +72,7 @@ def downloadXMLConfig(paloName, paloApi, currentDir):
         try:
             urllib.request.urlretrieve(
                 urlPaloXML,
-                currentDir + "/backup/{}_{}.txt".format(paloName, dateToday))
+                currentDir + "/backup/{}_{}.xml".format(paloName, dateToday))
             slacknotification(paloName)
             break
         except:
